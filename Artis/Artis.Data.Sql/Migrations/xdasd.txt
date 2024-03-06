@@ -1,0 +1,38 @@
+
+        public static async Task GenerateCategories(AppDbContext _context, int c)
+        {
+            var categoryList = new List<Kategoria>();
+
+            for (int i = 0; i < c; i++)
+            {
+                var category = new Kategoria
+                {
+                    nazwa = GenerateRandomString(rand.Next(5, 20))
+                };
+                GenerateQuery("kategoria", category);
+                categoryList.Add(category);
+            }
+            _context.Kategorie.AddRange(categoryList);
+            await _context.SaveChangesAsync();
+        }
+
+        public static async Task GenerateSubcategories(AppDbContext _context, int c)
+        {
+            var subcategoryList = new List<Podkategoria>();
+            var categories = _context.Kategorie.ToList();
+
+            if (categories.Count < c) throw new NotEnoughDataException("Kategorie", c - categories.Count);
+
+            for (int i = 0; i < c; i++)
+            {
+                var subcategory = new Podkategoria
+                {
+                    id_kategorii = categories[rand.Next(0, categories.Count - 1)].id_kategorii,
+                    nazwa = GenerateRandomString(rand.Next(5, 20))
+                };
+                GenerateQuery("podkategoria", subcategory);
+                subcategoryList.Add(subcategory);
+            }
+            _context.Podkategorie.AddRange(subcategoryList);
+            await _context.SaveChangesAsync();
+        }

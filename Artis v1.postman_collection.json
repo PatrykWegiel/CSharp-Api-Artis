@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "0659d2c8-7bc9-4457-a312-4dd805aaced6",
+		"name": "Artis v1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/v1.0/user/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1.0/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1.0",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/v1.0/user/1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\": \"testowyUser\",\r\n    \"Name\": \"testowy\",\r\n    \"Surname\": \"user\",\r\n    \"PhoneNumber\": \"123456789\",\r\n    \"BirthDate\": \"1999-05-28T00:00:00\",\r\n    \"Email\": \"test@testowy.pl\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1.0/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1.0",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/v1.0/user/edit/1",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"UserName\": \"nowaNazwaUzytkownika\",\r\n     \"Name\": \"nowaNazwa\",\r\n     \"Surname\": \"noweNazwisko\",\r\n     \"PhoneNumber\": \"987654321\",\r\n     \"Email\": \"nowyEmail@test.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1.0/user/edit/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1.0",
+						"user",
+						"edit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

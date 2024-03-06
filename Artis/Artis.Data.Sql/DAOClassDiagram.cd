@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Artis.Data.Sql.DAO.Bid">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABAAAAAAAAAEAAgAAAAAiEAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>DAO\Bid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Artis.Data.Sql.DAO.Category">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACgAAAAAAAAAAACAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>DAO\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Artis.Data.Sql.DAO.Delivery">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAACAAQAAEAIKAAAAAAAAAAAAAAAAAIAEAAAAAA=</HashCode>
+      <FileName>DAO\Delivery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Artis.Data.Sql.DAO.Item">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAFAAAAEQCAAgQAgAAAAAggAAACAAIIAAAAAAAACAA=</HashCode>
+      <FileName>DAO\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Artis.Data.Sql.DAO.Opinion">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAACgAAAAQAgAAAAAAAAAAAAAgEABAAAAAAAAA=</HashCode>
+      <FileName>DAO\Opinion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Artis.Data.Sql.DAO.User">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAASAACAQAAAAAQAwABQAAAACgAQAEAAAAAAA=</HashCode>
+      <FileName>DAO\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
